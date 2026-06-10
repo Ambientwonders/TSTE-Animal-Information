@@ -28,8 +28,15 @@
   <img src="images/11.png" alt="Aerial image of a factory farm">
 
   <img src="images/13.png" alt="Aerial image of a data center">
-</section>
 
+  <p>Which image is the factory farm?</p>
+
+  <input type="radio" name="question1" id="correct1"> Top image<br>
+  <input type="radio" name="question1"> Bottom image<br><br>
+
+  <input type="submit" name="submit" value="Check Answer" onclick="result()">
+</section>
+  
   <section>
   <p>One is filled with information.</p>
 
@@ -40,6 +47,94 @@
   <img src="images/18.png" alt="Young pigs in crowded area looking at camera">
 </section>
 
+  <section>
+  <p>
+    This installation builds on <em>The System That Eats</em>, a framework developed
+    for looking at an industry that does not want to be seen.
+  </p>
+
+  <img src="images/17.jpeg" alt="Copies of The System That Eats zine">
+
+      <img src="images/19.jpeg" alt="Table display of The System That Eats">
+    
+</section>
+
+  <section>
+  <p>
+    The System That Eats (TSTE) looks at Representation, Concealment, Externalized Costs,
+    and Moments Where The System Cannot Hold.
+    <span>TSTE: Animal Information</span> asks us to expand on the growing awareness
+    of data center harms to explore other implicated industrial systems: namely, factory farms.
+  </p>
+
+  <img src="images/15.jpeg" alt="Close up of one side of The System That Eats flyer">
+    <img src="images/16.jpeg" alt="Closeup of one side of The System That Eats flyer">
+    
+</section>
+
+<section>
+  <h2>I SPY: A Checklist</h2>
+
+  <p>Visitors receive an I SPY checklist, example below:</p>
+
+  <ul>
+    <li>☐ I spy a building that looks empty from above.</li>
+    <li>☐ I spy a system that depends on heat.</li>
+    <li>☐ I spy repetition.</li>
+<li>☐ I spy a system using massive amounts of water.</li>
+    <li>☐ I spy land being organized for extraction.</li>
+    <li>☐ I spy a place where bodies are counted.</li>
+    <li>☐ I spy a system designed to be seen from the outside, but not from within.</li>
+    <li>☐ I spy silence.</li>
+    <li>☐ I spy absence.</li>
+    <li>☐ I spy distance doing political work.</li>
+  </ul>
+
+  <p>Now look again.</p>
+
+  <ul>
+    <li>☐ Do you spy animals?</li>
+    <li>☐ If not, where did they go?</li>
+    <li>☐ What does the aerial view protect you from seeing?</li>
+    <li>☐ What would change if the system had to show the bodies inside?</li>
+  </ul>
+</section>
+
+  <section>
+  <p>
+    Finally, through multimedia materials including original farm animal sanctuary photography,
+    <em>TSTE: Animal Information</em> asks us to look at animal life.
+  </p>
+
+  <p>
+    What does it mean for some animal sights and sounds to be seen, heard, and even treasured
+    (ex. bird songs, wild turkeys, squirrels, bobcats) while others remain absent,
+    cloaked in industrial silence?
+  </p>
+
+  <p>
+    How does this absence allow these animals to become data points on the page of an industrial spreadsheet?
+  </p>
+
+  <img src="images/14.jpeg" alt="A sheep resting in grass at Charlie's Acres Farm Animal Sanctuary">
+
+     <p>
+   Photo taken at Charlie's Acres Farm Animal Sanctuary.
+  </p>
+    
+</section>
+  
+  <script>
+  function result() {
+    var score = 0;
+
+    if (document.getElementById('correct1').checked) {
+      score++;
+    }
+
+    alert("Your score is " + score + " out of 1");
+  }
+</script>
   
 </body>
 </html>
